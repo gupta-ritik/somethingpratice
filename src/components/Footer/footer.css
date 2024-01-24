@@ -52,11 +52,13 @@ transition: transform 0.3s;
     
 }
 .socal-logo:hover {
-    transform: scale(4);
+    transform: scale(3.5);
+    transition: 0.5s ease-out;
+    /* background-color: rgb(237, 170, 148); */
 }
 
 .socal-logo:active {
-    transform: scale(1.5);}
+    transform: scale(0.8);}
 #insta{
     background-image: url('../../../public/images/Frame\ 5.png');
 }
