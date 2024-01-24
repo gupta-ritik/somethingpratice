@@ -35,5 +35,16 @@ line-height: 22px;
 letter-spacing: 0em;
 text-align: left;
 color: rgba(0, 0, 0, 1);
+text-decoration: none;
 
 }
+.home{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+.home:hover {
+    background-color: #ddd;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+  }

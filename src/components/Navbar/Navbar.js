@@ -10,8 +10,8 @@ export default function Navbar() {
          
         </div>
         <div className="wrapper-right">
-          <a href="/">HOME</a>
-          <a href="/contactus">CONTACT US</a>
+          <a href="/" className='home'>HOME</a>
+          <a href="/contactus" className='home'>CONTACT US</a>
         </div>
       </div>
   )

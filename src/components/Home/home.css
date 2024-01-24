@@ -32,10 +32,24 @@ letter-spacing: 0em;
 text-align: left;
 text-wrap: wrap;
 color: rgba(0, 0, 0, 1);
+animation: jump 5s ease-in-out 10s infinite;
 @media(max-width:550px){
     font-size: 4.4vw;
 }
-}
+@keyframes jump{
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-20px) scale(1.2);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+}}
+
+
+
 .text{
     font-family: IBM Plex Sans;
 font-size: 1.6vw;
@@ -61,6 +75,50 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 cursor: pointer;
+transition: transform 0.3s;
+}
+/* animation: wiggle 2s linear infinite;
+}
+
+/* Keyframes */
+/* @keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  } */
+
+
+
+
+/* .button:hover{
+    transition: 0.5s ease-out;
+    background-color: rgb(237, 170, 148);
+} */
+.button:hover {
+    transform: scale(1.5);
+    transition: 0.5s ease-out;
+    background-color: rgb(237, 170, 148);
+}
+
+.button:active {
+    transform: scale(0.8);
 }
 .explore{
     font-family: IBM Plex Sans;
@@ -102,6 +160,7 @@ animation: rotation 20s infinite linear;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 .learn{
     font-family: IBM Plex Sans;
@@ -110,6 +169,7 @@ font-weight: 400;
 line-height: 3vw;
 letter-spacing: 0em;
 text-align: left;
+cursor: pointer;
 @media(max-width:550px){
     font-size: 4vw;
 }
@@ -125,11 +185,16 @@ text-align: left;
     width: 5vw;
 height: 5vw;
 cursor: pointer;
+
 @media(max-width:550px){
     width: 7vw;
     height: 7vw;
 }
+
 }
+.expandmore:hover{
+    transition: 0.5s ease-out;
+    background-color: rgb(237, 170, 148);}
 .about{
     display: flex;
     flex-direction: row;
@@ -153,6 +218,15 @@ gap:4vw;
     background-size: contain;
     width: 25%;
 height: 28vw;
+animation: rotation 20s infinite linear;
+}
+@keyframes rotation {
+
+0%{
+    transform: rotateZ(180deg);
+   
+}
+
 }
 
 .about-right{
@@ -183,10 +257,13 @@ font-weight: 400;
 line-height: 1.8vw;
 letter-spacing: 0em;
 text-align: left;
+animation-duration: 3s;
+  animation-name: slidein;
 @media(max-width:550px){
     font-size: 2.1vw;
     line-height: 2.5vw;
 }
+
 }
 
 .join-us{
@@ -268,10 +345,15 @@ background-repeat: no-repeat;
 background-size: contain;
 cursor: pointer;
 mix-blend-mode: color-burn;
+transition: transform 0.09s;
 }
 .join-right:hover{
+    transform: scale(1.6);
     transition: 0.5s ease-in;
-    background-color: rgb(148, 237, 161);
+    background-color: rgb(237, 182, 148);
+}
+.join-right:active {
+    transform: scale(0.8);
 }
 .email{
     font-family: Inter;

@@ -13,7 +13,7 @@ function App() {
     <Navbar/>
   <Router>
 <Switch>
-    <Route exact path="/"> 
+    <Route exact path="/" tyle={{ textDecoration: 'none' }}> 
     <Home/>
     </Route>
     <Route exact path="/contactus">

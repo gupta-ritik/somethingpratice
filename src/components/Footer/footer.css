@@ -48,7 +48,15 @@ height: 2.5vw;
     background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
+transition: transform 0.3s;
+    
 }
+.socal-logo:hover {
+    transform: scale(4);
+}
+
+.socal-logo:active {
+    transform: scale(1.5);}
 #insta{
     background-image: url('../../../public/images/Frame\ 5.png');
 }
